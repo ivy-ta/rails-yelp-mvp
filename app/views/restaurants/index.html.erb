@@ -1,0 +1,9 @@
+
+<% @restaurants.each do |restaurant| %>
+<ul class="list-group">
+  <li class="list-group-item">
+    <h3><%= link_to restaurant.name, restaurant_path(restaurant) %></h3>
+    <em><%= restaurant.category.capitalize %></em>
+  </li>
+</ul>
+<% end %>
